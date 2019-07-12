@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Bootstrap 4 Componentes</title>
+  </head>
+  <body>
+    <!-- ALERTS CAP 3 -->
+    <div class="container">
+      <div class="alert alert-success">
+        esto es un mensaje de alerta
+      </div>
+      <div class="alert alert-success alert-dismissible show fade">
+        esto es un mensaje con un  mensaje <a href="" class="alert-link">enlace</a>
+        <button class="close" type='button' data-dismiss='alert'>
+          <span>x</span>
+        </button>
+      </div>
+    </div>
+
+
+    <!--COMENTARIOS
+      Puedo además interaccionar con estos elementos alert mediante el uso de una serie de métodos:
+
+      $().alert(). Enlaza manejadores de click con los elementos hijo que tengan data-dismiss=”alert” para que al ahcer click sobre ellos desaparezcan los elementos seleccionados.
+      $().alert(‘close’). Cierra las alertas y las elimina del DOM.
+      $().alert(‘dispose’). XXXXXXX
+      Y los eventos asociados son:
+
+      close.bs.alert que se dispara al cerrar la alerta.
+      closed.bs.alert que se dispara cuando la alerta se está cerrando del todo.
+    
+    -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>

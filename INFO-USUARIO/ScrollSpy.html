@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+        .ejemploscroll {
+            height: 200px;
+            overflow: auto;
+        }
+    </style>
+    <title>Bootstrap 4 Componentes</title>
+  </head>
+  <body>
+     <!-- SCROLLSPY CAP 3 -->
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+                <ul class="list-group" id='navegacion'>
+                    <li class="list-group-item active" data-target='#s1'>Seccion 1</li>
+                    <li class="list-group-item" data-target='#s2'>Seccion 2</li>
+                    <li class="list-group-item" data-target='#s3'>Seccion 3</li>
+                    <li class="list-group-item" data-target='#s4'>Seccion 4</li>
+                </ul>
+            </div>
+            <div class="col-md-4 ejemploscroll" data-spy='scroll' data-target='#navegacion' data-offset='0'>
+                    <h1 id='s1'>Seccion 1</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos dolor expedita consectetur officiis pariatur unde eius autem enim magni ipsam. Eveniet quidem ducimus rem tempora error sit. Cumque, incidunt ut.</p>
+                    <h1 id='s2'>Seccion 2</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod tempora magnam animi voluptatum porro ipsam placeat aut exercitationem iusto unde asperiores quam maiores, ipsa eos assumenda alias doloribus veritatis provident.</p>
+                    <h1 id='s3'>Seccion 3</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, adipisci qui dolores, harum, alias eos deleniti dolor quibusdam velit ducimus voluptates necessitatibus natus rerum voluptatibus aperiam a voluptate ex asperiores.</p>
+                    <h1 id='s4'>Seccion 4</h1>       
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, officiis laudantium libero illum qui recusandae dolorem reiciendis hic vero consectetur quidem ducimus ex sapiente corporis! Necessitatibus dignissimos molestiae quod accusantium.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!--COMENTARIOS
+        Funciones asociadas
+            .scrollspy({target: “#idnavegación”}) Habilita el componente para ese elemento de navegación que hemos identificado mediante un ID.
+            .scrollspy(‘refresh’) Si añado/quito elementos al DOM para que siga funcionando el componente tengo que hacer recargar usando este método.
+            .scrollspy(‘dispose’) Destruye el componente ScrollSpy. Deja de funcionar.
+        Eventos asociados.
+            La interacción con este tipo de elementos genera 1 nuevos tipo de eventos, bastante auto explicativos por su nombre. Para saber más detalles deberemos visitar el manual de referencia.
+
+            activate.bs.scrollspy
+    -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>

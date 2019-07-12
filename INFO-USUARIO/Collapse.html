@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Bootstrap 4 Componentes</title>
+  </head>
+  <body>
+    <!-- COLLAPSE  CAP 3 -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <a href="#mycollapse" data-toggle="collapse" class='btn btn-success'>Ocultar/Mostrar</a>
+                <button type='button' class="btn btn-danger" data-toggle="collapse" data-target='#mycollapse'>Ocultar/Mostrar</button>
+                <div class="collapse" id='mycollapse'>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, velit magni assumenda enim incidunt id vero distinctio, aliquam, amet odit tempora numquam accusamus ea vel fugit consectetur non aperiam nesciunt.
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content- mt-5">
+                <div class="col-md-4">
+                    <button type='button' class="btn btn-danger" data-toggle="collapse" data-target='.acolapsar'>Ocultar/Mostrar</button>
+                    <div class="collapse" class='acolapsar'>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, velit magni assumenda enim incidunt id vero distinctio, aliquam, amet odit tempora numquam accusamus ea vel fugit consectetur non aperiam nesciunt.
+                    </div>
+                    <div class="collapse acolapsar">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, velit magni assumenda enim incidunt id vero distinctio, aliquam, amet odit tempora numquam accusamus ea vel fugit consectetur non aperiam nesciunt.
+                    </div>
+                    <div class="collapse acolapsar">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, velit magni assumenda enim incidunt id vero distinctio, aliquam, amet odit tempora numquam accusamus ea vel fugit consectetur non aperiam nesciunt.
+                    </div>
+                    <div class="collapse acolapsar">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, velit magni assumenda enim incidunt id vero distinctio, aliquam, amet odit tempora numquam accusamus ea vel fugit consectetur non aperiam nesciunt.
+                    </div>
+                    <div class="collapse acolapsar">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, velit magni assumenda enim incidunt id vero distinctio, aliquam, amet odit tempora numquam accusamus ea vel fugit consectetur non aperiam nesciunt.
+                    </div>
+                </div>
+            </div>
+
+    </div>
+
+
+    <!--COMENTARIOS
+        Funciones asociadas
+            Las más importantes son, bajo mi punto de vista:
+
+            .collapse(options) Habilita un elemento como colapsable. Para más información sobre las posibles opciones visitar el manual.
+            .collapse(‘show’) Muestra los elementos seleccionados que tengan la clase collapse.
+            .collapse(‘hide’) Oculta los elementos seleccionados que tengan la clase collapse.
+            .collapse(‘toogle’) Cambio el estado de visibilidad los elementos seleccionados que tengan la clase collapse.
+            .collapse(‘dispose’) Destruye el elemento colapsable. Deja de funcionar.
+        Eventos asociados
+            La interacción con este tipo de elementos genera 4 nuevos tipos de eventos, bastante auto explicativos por su nombre y de los cuáles, para saber más detalles deberemos visitar el manual de referencia.
+
+            show.bs.collpase
+            shown.bs.collapse
+            hide.bs.collpase
+            hidden.bs.collapse
+    
+    -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $(".collapse").on("show.bs.collapse", function() {
+                alert("CAPTURADO");
+            })
+        })
+    </script>
+  </body>
+</html>

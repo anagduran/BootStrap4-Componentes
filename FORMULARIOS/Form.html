@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Bootstrap 4 Componentes</title>
+  </head>
+  <body>
+    <!-- FORM CAP 4 -->
+    <div class="container">
+        <h1>Formulario de Registro</h1>
+        <div class="row">
+            <div class="col-md-6 justify-content-center">
+                    <form action="">
+
+                            <div class="form-group">
+                                <label class='col-label-sm'>Usuario</label>
+                                <input type="text" class='form-control' required>
+                            </div>
+            
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" class='form-control'>
+                                <div class="valid-feedback">Texto si esta correcto</div>
+                                <div class="invalid-feedback">Texto no esta correcto</div>
+                            </div>
+            
+                            <div class="form-group">
+                                <label>Password</label>
+                                <input type="password" class='form-control'>
+                            </div>
+            
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class='form-check-input' value='H'>
+                                <label>Hombre</label>
+                            </div>
+            
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class='form-check-input' value='M'>
+                                <label>Mujer</label>
+                            </div>
+            
+                            <div class="form-group">
+                                <label>Seleccionar foto de perfil</label>
+                                <input type="file" class='form-control-file'>                   
+                            </div>
+            
+                            <div class='text-right'>
+                                <input type="text" class="btn btn-primary" type='submit' value='Registrar'>
+                            </div>
+                        </form>
+            </div>
+            
+           
+        </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script>
+        (function() {
+        //Modo Estricto
+        'use strict';
+
+        // Cuando se acaba de cargar la página
+        window.addEventListener('load', function() {
+
+          //Seleccionamos los formularios que quiero validar
+          var forms = document.getElementsByClassName('validar');
+          console.log(forms.length);
+          // Los recorro y evito que se manden los datos en caso de error
+          var validation = Array.prototype.filter.call(forms, function(form) {
+              form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+              }, false);
+          });
+        }, false);
+
+      })();
+    </script>
+  </body>
+</html>
