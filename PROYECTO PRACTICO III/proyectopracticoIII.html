@@ -11,7 +11,7 @@
     <title>Bootstrap 4 Componentes</title>
   </head>
   <body>
-    <!-- PROYECTO PRACTICO II -->
+    <!-- PROYECTO PRACTICO III -->
     <div class="container-fluid">
         <div class="alert alert-dismissible fade show alert-warning fixed-bottom">
             Aviso de Cookies, Te has enterado?
@@ -79,12 +79,21 @@
                         </div>
                         <span data-dismiss='modal'>X</span>
                     </div>
-                <div class="modal-body">
-
-                </div>
-                <div class="modal-footer">
-
-                </div>
+                <form action="">
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="">Email:</label>
+                            <input type="email" class="form-control" placeholder='Introduce tu email'>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Password:</label>
+                            <input type="password" class="form-control" placeholder='Introduce tu password'>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <input type="submit" class="btn btn-primary" value='Entrar'>
+                    </div>
+                </form>
                 </div>
             </div>
         </section>
@@ -99,12 +108,42 @@
                             </div>
                             <span data-dismiss='modal'>X</span>
                         </div>
-                    <div class="modal-body">
-    
-                    </div>
-                    <div class="modal-footer">
-    
-                    </div>
+                    <form action="">
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label for="">Nombre:</label>
+                                <input type="texto" class="form-control" placeholder='Introduce tu nombre'>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Apellidos:</label>
+                                <input type="texto" class="form-control" placeholder='Introduce los apellidos'>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Email:</label>
+                                <input type="email" class="form-control" placeholder='Introduce tu email'>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Password:</label>
+                                <input type="password" class="form-control" placeholder='Introduce tu password' required>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Sexo</label>
+                                <div class="btn btn-group btn-group-toggle" data-toggle="buttons">
+                                    <label for="" class="btn btn-warning">
+                                        <input type="radio" name='sexo' id='V'> Hombre
+                                    </label>
+                                    <label for="" class="btn btn-warning">
+                                        <input type="radio" name='sexo' id='M'> Mujer
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <input type="submit" class="btn btn-primary" value='Registrar'>
+                        </div>
+                    </form>
+                    
+
                     </div>
                 </div>
         </section>
