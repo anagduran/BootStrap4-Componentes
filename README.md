@@ -9,7 +9,7 @@ Esta estructura incluye:
 3. Script Popper.js.
 4. Script Bootstrap JS.
 
-Dividos de la siguiente manera:
+Estos ejemplos esta divididos de la siguiente manera:
 
 ## Formularios.
 
