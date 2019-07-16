@@ -11,13 +11,13 @@ Esta estructura incluye:
 
 Dividos de la siguiente manera:
 
-##Formularios.
+## Formularios.
 
 * Ejemplo basico del Componente Form.
 * Ejemplo basico del Componente Button.
 * Ejemplo basico del Componente Input-Group.
 
-##Informacion al usuario.
+## Informacion al usuario.
 
 * Ejemplo basico del Componente Alert.
 * Ejemplo basico del Componente Badge.
@@ -29,7 +29,7 @@ Dividos de la siguiente manera:
 * Ejemplo basico del Componente Tooltip.
 
 
-##Navegacion.
+## Navegacion.
 
 * Ejemplo basico del Componente BreadCrubms.
 * Ejemplo basico del Componente Dropdown.
