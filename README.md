@@ -37,5 +37,14 @@ Estos ejemplos esta divididos de la siguiente manera:
 * Ejemplo basico del Componente NavBar.
 * Ejemplo basico del Componente Pagination.
 
+## Otros Componentes.
+
+* Ejemplo basico del Componente Card.
+* Ejemplo basico del Componente Carousel.
+* Ejemplo basico del Componente Jumbotron.
+* Ejemplo basico del Componente List Group.
+
+
+
 
 
